@@ -1,0 +1,26 @@
+{
+  "name": "levdelivery-sdk",
+  "version": "0.0.1",
+  "description": "conector js/ts para api levdelivery",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test:auth": "vitest --disable-console-intercept --silent=false ./src/auth_token.test.ts",
+    "test": "vitest --disable-console-intercept --silent=false --exclude ./src/auth_token.test.ts",
+    "dev": "tsx src/index.ts"
+  },
+  "author": "joaop",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node-localstorage": "^1.3.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "node-localstorage": "^3.0.5",
+    "true-myth": "^8.0.1"
+  }
+}
